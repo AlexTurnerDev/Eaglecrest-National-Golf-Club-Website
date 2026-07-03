@@ -222,3 +222,162 @@ footer {
     font-size: 0.9rem;
     opacity: 0.8;
 }
+
+/* Tee Times Page */
+.page-hero {
+    height: 280px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.tee-hero {
+    background-image: url('../assets/aerial.png');
+}
+
+.tee-intro {
+    max-width: 850px;
+    margin: 40px auto 25px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.tee-intro h2 {
+    color: var(--primary-green);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.tee-booking {
+    max-width: 1050px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.schedule-panel,
+.booking-form-panel {
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.schedule-panel h2,
+.booking-form-panel h2 {
+    color: var(--primary-green);
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+}
+
+.tee-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.tee-table th,
+.tee-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.tee-table th {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.tee-table tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+.tee-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tee-form label {
+    font-weight: 700;
+    color: var(--secondary-grey);
+}
+
+.tee-form input,
+.tee-form select,
+.tee-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+.tee-form select {
+    appearance: none;
+    background-color: var(--white);
+    background-image: none;
+}
+
+.tee-form textarea {
+    resize: vertical;
+}
+
+.tee-form .book-btn {
+    margin-top: 8px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-container,
+    .gallery-top,
+    .tee-booking {
+        flex-direction: column;
+    }
+
+    .tee-booking {
+        display: flex;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .logo-box {
+        width: 65px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2.2rem;
+        padding: 0 15px;
+    }
+
+    .gallery-card,
+    .cta-box,
+    .schedule-panel,
+    .booking-form-panel {
+        width: 100%;
+    }
+
+    .tee-table {
+        font-size: 0.85rem;
+    }
+
+    .tee-table th,
+    .tee-table td {
+        padding: 8px;
+    }
+}
