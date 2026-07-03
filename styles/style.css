@@ -29,7 +29,7 @@ h1, h2, h3 {
 
 /* Header & Nav Layout matching wireframe */
 header {
-    background-color: rgba(47, 107, 63, 0.75); 
+    background-color: var(--primary-green);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -204,7 +204,7 @@ nav a:hover, nav a.active {
 
 /* Footer layout */
 footer {
-    background-color: rgba(47, 107, 63, 0.75); 
+    background-color: var(--primary-green);
     color: var(--white);
     text-align: center;
     padding: 30px 20px;
